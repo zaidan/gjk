@@ -1,0 +1,9 @@
+- pattern: .*\.hs$
+  commands:
+  - hlint \0
+  - stack build --fast
+  - stack test --fast
+- patterns:
+  - ^.*\.cabal$
+  - ^stack\.yaml$
+  command: stack build --fast

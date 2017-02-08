@@ -1,0 +1,44 @@
+name: gjk
+version: '0.0.0.1'
+license: MIT
+license-file: LICENSE
+maintainer: firas@zaidan.de
+stability: stable
+github: zaidan/gjk
+synopsis: Gilbert-Johnson-Keerthi (GJK) collision detection algorithm
+description: >
+    This package implements the Gilbert-Johnson-Keerthi (GJK) collision
+    detection algorithm for 2D convex objects. It is quite efficient, usually
+    converging within one or two iterations.
+category: Graphics
+author:
+  - Firas Zaidan
+extra-source-files:
+  - README.md
+
+ghc-options: -Wall
+
+default-extensions:
+  - BangPatterns
+  - DeriveFunctor
+  - FlexibleContexts
+  - LambdaCase
+  - OverloadedStrings
+  - RecordWildCards
+  - ScopedTypeVariables
+  - ViewPatterns
+
+dependencies:
+  - base       >= 4.9 && < 5.0
+
+library:
+  source-dirs: src
+  dependencies: []
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs: test
+    dependencies:
+      - gjk
+      - hspec

@@ -1,0 +1,26 @@
+## MAC OS
+.DS_Store
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.sw[op]
+
+## PROJECT::GENERAL
+*.o
+*.hi
+*.sw*
+dist
+.cabal-sandbox
+cabal.sandbox.config
+cabal.config
+.stack-work
+
+## PROJECT::SPECIFIC
