@@ -65,7 +65,8 @@ perp a b = trip a b a
 isSameDirection :: Pt -> Pt -> Bool
 isSameDirection a b = dot a b > 0
 
--- Pass bc as first parameter
+-- | Get the direction vector of given points.
+-- Pass bc as first parameter.
 getDirectionVector :: Pt -> Pt -> Pt
 getDirectionVector (x1, y1) (x2, y2) =
   let
