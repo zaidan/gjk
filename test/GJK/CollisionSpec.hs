@@ -8,7 +8,7 @@ import Test.Hspec
 spec :: Spec
 spec =
   describe "collision" $ do
-    it "shoult find collision for inner polygon" $
+    it "should find collision for inner polygon" $
       isCollision polygon inner `shouldBe` True
     it "should not find collison for outer polygon" $
       isCollision polygon outer `shouldBe` False
