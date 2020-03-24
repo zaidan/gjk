@@ -15,6 +15,7 @@ author:
   - Firas Zaidan
 extra-source-files:
   - README.md
+  - CHANGELOG.md
 
 ghc-options: -Wall
 

@@ -1,5 +1,9 @@
+[ci]: https://github.com/zaidan/gjk/actions
+
 # Gilbert-Johnson-Keerthi (GJK) collision detection algorithm
+
 [![Hackage](https://img.shields.io/hackage/v/gjk.svg)](https://hackage.haskell.org/package/gjk)
+[![Build Status](https://github.com/zaidan/gjk/workflows/Haskell%20CI/badge.svg)][ci]
 
 This package implements the Gilbert-Johnson-Keerthi (GJK) collision detection
 algorithm for 2D convex objects. It is quite efficient, usually converging

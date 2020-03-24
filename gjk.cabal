@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c9b81b547e97f48b3d57634c0f61dfe40848657cc01c311165ea7f344a24eb3b
+-- hash: 1950af013ba50b28b5941bc5f0cfb9135ae48029fe71a1daaf0d16e771f4d1e3
 
 name:           gjk
 version:        0.0.0.2
@@ -21,6 +21,7 @@ license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
+    CHANGELOG.md
 
 source-repository head
   type: git
