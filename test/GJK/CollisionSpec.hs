@@ -12,6 +12,10 @@ spec =
       isCollision polygon inner `shouldBe` True
     it "should not find collison for outer polygon" $
       isCollision polygon outer `shouldBe` False
+    it "should not find collison for box1 and box2" $
+      isCollision box1 box2A `shouldBe` False
+    it "should not find collison for box1 and box3" $
+      isCollision box1 box2B `shouldBe` False
 
 inner :: [Pt]
 inner =
@@ -20,8 +24,8 @@ outer :: [Pt]
 outer =
   [(-145.63095,-6.0234867), (-148.85714,-6.0), (-147.89875,-18.336034)]
 
-polygon :: [Pt] 
-polygon = 
+polygon :: [Pt]
+polygon =
   [
     (139.17857,6.0704),
     (142.40476,6.0469733),
@@ -147,4 +151,31 @@ polygon =
     (119.56973,13.690153),
     (129.37415,9.8803067),
     (139.17857,6.07046)
+  ]
+
+box1 :: [Pt]
+box1 =
+  [
+    (1874.9342045000049, -50.0),
+    (1874.9342045000049, 50.0),
+    (1974.9342045000049, 50.0),
+    (1974.9342045000049, -50.0)
+  ]
+
+box2A :: [Pt]
+box2A =
+  [
+    (450.0, -50.0),
+    (450.0, 50.0),
+    (550.0, 50.0),
+    (550.0, -50.0)
+  ]
+
+box2B :: [Pt]
+box2B =
+  [
+    (450.0000000000000, -50.0000000000000),
+    (450.0000000000000, 50.0000000000000),
+    (550.0000000000000, 50.0000000000000),
+    (550.0000000000000, -50.0000000000000)
   ]
