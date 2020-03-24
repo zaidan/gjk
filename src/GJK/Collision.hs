@@ -30,7 +30,7 @@ the case where you are writing your own support functions.
 collision :: Int -> Mink a -> Mink b -> Maybe Bool
 collision limit minkA minkB =
   let
-    d1 = (1.0, 0.0)
+    d1 = (1.0, -1.0)
     d2 = neg d1
     maybec = calcMinkSupport minkA minkB d1
     maybeb = calcMinkSupport minkA minkB d2
